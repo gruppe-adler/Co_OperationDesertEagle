@@ -1,0 +1,10 @@
+enableDebugConsole = 1;
+
+class CfgSounds {
+	#include "r0ed_SurvivableCrashes\CfgSounds.hpp"
+};
+
+class CfgFunctions
+{
+	#include "r0ed_SurvivableCrashes\CfgFunctions.hpp"
+};
