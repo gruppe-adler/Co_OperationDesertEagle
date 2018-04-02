@@ -7,4 +7,5 @@ class CfgSounds {
 class CfgFunctions
 {
 	#include "r0ed_SurvivableCrashes\CfgFunctions.hpp"
+  #include "ODE_objectives\cfgFunctions.hpp"
 };
