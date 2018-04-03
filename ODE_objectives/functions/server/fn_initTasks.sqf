@@ -11,7 +11,7 @@ private _cas = missionNameSpace getVariable ["ODE_group_cas", []];
 	[
     [
   		_infantry,
-  		"tsk_takeFOB",
+  		"tsk_infantry_takeFOB",
   		"Mit Begleitschutz ins Zielgebiet verlegen, FOB einnehmen und sichern.",
   		"Ins Zielgebiet verlegen.",
   		"mrk_fob",
@@ -19,8 +19,8 @@ private _cas = missionNameSpace getVariable ["ODE_group_cas", []];
   	],
     [
   		_cas,
-  		"tsk_takeFOB",
-  		"Als Begleitschutz ins Zielgebiet verlegen, FOB einnehmen und sichern.",
+  		"tsk_cas_takeFOB",
+  		"Als Begleitschutz ins Zielgebiet verlegen, FOB sichern.",
   		"UH-60M schützen.",
   		"mrk_fob",
   		"defend"

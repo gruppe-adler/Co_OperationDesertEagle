@@ -4,9 +4,9 @@ params ["_targetMarker"];
 
 private _location = getMarkerPos _targetMarker;
 
-["Preparing teleport..."] call EFUNC(common,displayTextStructured);
+["Respawning as Opfor"] call EFUNC(common,displayTextStructured);
+
 cutText ["", "BLACK OUT", 0.1];
-if (str player != "opfor_teamlead") then { sleep (random 10);};
 
 _spawn = _location findEmptyPosition[2, 20, "B_Soldier_F"];
 diag_log format ["teleporting %1 to %2.", player, _location];
