@@ -1,4 +1,4 @@
-params ["_type", "_position"];
+params [["_type", "LOP_Tak_Civ_Random"], "_position"];
 
 private _agent = createAgent [_type, _position, [], 0, "NONE"];
 _agent setVariable ["BIS_fnc_animalBehaviour_disable", true];
@@ -6,6 +6,8 @@ _agent joinSilent (createGroup east);
 
 _agent disableAI "SUPPRESSION";
 _agent disableAI "CHECKVISIBLE";
+_agent disableAI "FSM";
+_agent setBehaviour "CARELESS";
 
 _agent addEventhandler ["Killed", {
 
