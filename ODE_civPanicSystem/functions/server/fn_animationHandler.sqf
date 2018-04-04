@@ -2,9 +2,10 @@ params ["_unit"];
 
 missionNameSpace setVariable ["ODE_civPanicSystem_civAnimationsIdle",
 [
-"",
-"",
-""
+"Acts_StandingSpeakingUnarmed",
+"Acts_ShieldFromSun_loop",
+"Acts_listeningToRadio_Loop",
+"Acts_Kore_Introducing"
 ]];
 
 missionNameSpace setVariable ["ODE_civPanicSystem_civAnimationsPanicRun",
@@ -21,7 +22,13 @@ missionNameSpace setVariable ["ODE_civPanicSystem_civAnimationsPanicStatic",
 "ApanPknlMstpSnonWnonDnon_G03",
 "ApanPpneMstpSnonWnonDnon_G01",
 "ApanPpneMstpSnonWnonDnon_G02",
-"ApanPpneMstpSnonWnonDnon_G03"
+"ApanPpneMstpSnonWnonDnon_G03",
+
+"Acts_CivilHiding_1",
+"Acts_CivilHiding_2",
+"AinvPknlMstpSnonWnonDnon_1",
+"AinvPknlMstpSnonWnonDnon_healed_1",
+"AinvPknlMstpSnonWnonDnon_healed_2"
 ]];
 
 _unit addEventhandler ["AnimDone", {
