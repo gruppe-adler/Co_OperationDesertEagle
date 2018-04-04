@@ -16,9 +16,12 @@ missionNameSpace setVariable ["ODE_civPanicSystem_civAnimationsPanicRun",
 
 missionNameSpace setVariable ["ODE_civPanicSystem_civAnimationsPanicStatic",
 [
-"",
-"",
-""
+"ApanPercMstpSnonWnonDnon_G01",
+"ApanPknlMstpSnonWnonDnon_G02",
+"ApanPknlMstpSnonWnonDnon_G03",
+"ApanPpneMstpSnonWnonDnon_G01",
+"ApanPpneMstpSnonWnonDnon_G02",
+"ApanPpneMstpSnonWnonDnon_G03"
 ]];
 
 _unit addEventhandler ["AnimDone", {
