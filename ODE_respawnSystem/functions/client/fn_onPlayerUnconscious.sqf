@@ -6,7 +6,7 @@ if _state then {
   	_Wasted ctrlSetPosition  [-0.000156274 * safezoneW + safezoneX,0.423 * safezoneH + safezoneY,1.02094 * safezoneW,0.099 * safezoneH];
   	_Wasted ctrlCommit 0;
   	_Wasted ctrlSetBackgroundColor [0, 0, 0, 0.9];
-  	_Wasted ctrlSetStructuredText parseText format["<t size='4' color='#FF0000' align = 'center'>Du bist ohnmächtig!</t>"];
+  	_Wasted ctrlSetStructuredText parseText format["<t size='4' color='#FF0000' align = 'center'>Auf Hilfe warten oder:</t>"];
 
 
     _rspbutton = (uiNamespace getVariable ["ace_common_dlgDisableMouse", displayNull]) ctrlCreate ["RscButton",1931];
