@@ -1,4 +1,4 @@
-params ["_veh","_HandleDamageEvent"];
+params ["_veh"]; // ,"_HandleDamageEvent"
 private ["_vehRestCode", "_sfxEnabled", "_exagEffectsEnabled"];
 _vehRestCode = missionNamespace getVariable "r0ed_SurvivableCrashesVar_VehicleRestCode";
 _sfxEnabled = missionNamespace getVariable "r0ed_SurvivableCrashesVar_SoundEffectsEnabled";
@@ -35,11 +35,11 @@ _veh allowDamage false;
 	if(_exagEffectsEnabled) then {
 		[_veh,_velocityVehPrev] call {
 		    params ["_veh", "_aproxVel"];
-			
+
 			_velocityVeh = velocity _veh;
 			_dir = (_velocityVeh select 0) atan2 (_velocityVeh select 1);
 			_speed = 4 + random 2;
-			
+
 			_velocityVeh = [(sin _dir) * _speed * sqrt abs(_velocityVeh select 0),
 				(cos _dir) * _speed * sqrt abs(_velocityVeh select 1),
 				(1 + random 4) * sqrt(abs(_aproxVel)) + .4 ]; // being tested - post 1.2.1
@@ -71,4 +71,5 @@ _veh allowDamage false;
 	[_x] remoteExecCall ["r0ed_fnc_vehicleCrashLocal", _x];
 } forEach crew _veh;
 
-[_veh, _HandleDamageEvent] spawn _onCrashCode;
+// [_veh, _HandleDamageEvent] spawn _onCrashCode;
+[_veh] spawn _onCrashCode;

@@ -25,12 +25,12 @@ _veh addEventHandler ["HandleDamage", {
 	_isCrash = false;
 	_returnVal = _dmg;
 	_health = 0;
-	
-	
-	if(_index == -1) then { 
+
+
+	if(_index == -1) then {
 		_health = damage _veh;
-	} else { 
-		_health = _veh getHit _part; 
+	} else {
+		_health = _veh getHit _part;
 	};
 	if(_health == 1) exitWith {};
 	if (_health + _dmg > 0.88) then { // this is wrong and needs to be fixed
@@ -41,7 +41,8 @@ _veh addEventHandler ["HandleDamage", {
 		if(_isCrash) then {
 			if (_veh getVariable "r0ed_SurvivableCrashes_NotShotDown") then {
 				_veh setVariable ["r0ed_SurvivableCrashes_NotShotDown", false];
-				[_veh, _this] call r0ed_SurvivableCrashes_OnVehicleCrash;
+        [_veh] call r0ed_SurvivableCrashes_OnVehicleCrash;
+        // [_veh, _this] call r0ed_SurvivableCrashes_OnVehicleCrash;
 			};
 		};
 	};

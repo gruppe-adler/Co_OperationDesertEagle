@@ -1,6 +1,10 @@
 class ODE_missionControl {
 
 	class client {
+    file = ODE_missionControl\functions\client;
+
+    class missileDamage;
+    class missileImpactEffects;
 
 	};
 
