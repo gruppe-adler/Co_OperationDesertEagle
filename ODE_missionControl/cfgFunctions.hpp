@@ -8,5 +8,7 @@ class ODE_missionControl {
 		file = ODE_missionControl\functions\server;
 
 		class addModulesAchilles;
+    class missileFire;
+    class missileGuide;
 	};
 };
